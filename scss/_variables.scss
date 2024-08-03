@@ -1,12 +1,12 @@
 /*font Variables*/
 $rob: 'Roboto', sans-serif;
-$hee: 'Heebo', sans-serif;  
+$hee: 'Heebo', sans-serif;
 
 
 /*Color Variables*/
-$baseColor: #8490ff; 
-$dip: #222222;
-$pfont: #777777; 
+$baseColor: #8490ff;
+$dip: #000000;
+$pfont: #777777;
 
 
 /*=================== fonts ====================*/
@@ -14,7 +14,7 @@ $pfont: #777777;
 
 // Mixins
 @mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
-    transition: $property $duration $animate $delay; 
+    transition: $property $duration $animate $delay;
 }
 
 // Placeholder Mixins
@@ -25,7 +25,3 @@ $pfont: #777777;
   &::-moz-placeholder { @content; }
   &::-webkit-input-placeholder { @content; }
 }
-
-
-
-

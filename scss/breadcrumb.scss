@@ -44,11 +44,11 @@
 				text-align: right;
 			}
 			.banner_btn{
-				
+
 			}
 		}
-	}	
-	
+	}
+
 }
 
 .blog_banner{
@@ -59,7 +59,7 @@
 	margin-bottom: 0px;
 	.banner_inner{
 		background: #04091e;
-		position: relative; 
+		position: relative;
 		overflow: hidden;
 		width: 100%;
 		min-height: 780px;
@@ -105,6 +105,7 @@
 .banner_area{
 	position: relative;
 	z-index: 1;
+  background: url(../img/banner/agw_background.png) no-repeat scroll center center;
 	min-height: 430px;
 	.banner_inner{
 		position: relative;
@@ -154,7 +155,66 @@
 						margin-right: 0px;
 						&:before{
 							display: none;
-						}	
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.projects_banner_area{
+	position: relative;
+	z-index: 1;
+  background: url(../img/banner/agw_background.png) no-repeat scroll center center;
+	min-height: 430px;
+	.banner_inner{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		min-height: 430px;
+		z-index: 1;
+//		.overlay{
+//			background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+//			position: absolute;
+//			left: 0;
+//			right: 0;
+//			top: 0;
+//			height: 125%;
+//			bottom: 0;
+//			z-index: -1;
+//			opacity: 1;
+//		}
+		.banner_content{
+			margin-top: 70px;
+			h2{
+				color: $dip;
+				font-size: 36px;
+				font-family: $hee;
+				margin-bottom: 0px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			.page_link{
+				a{
+					font-size: 14px;
+					color: $pfont;
+					font-family: $rob;
+					margin-right: 32px;
+					position: relative;
+					&:before{
+						content: "\e87a";
+						font-family: 'Linearicons-Free';
+						font-size: 14px;
+						position: absolute;
+						right: -25px;
+						top: 54%;
+						transform: translateY(-50%);
+					}
+					&:last-child{
+						margin-right: 0px;
+						&:before{
+							display: none;
+						}
 					}
 				}
 			}

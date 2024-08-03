@@ -99,6 +99,7 @@ button:focus {
   .box_1620 {
     max-width: 1650px;
     margin: auto; } }
+
 .white_bg {
   background: #fff !important; }
 
@@ -110,7 +111,7 @@ button:focus {
   .main_title h2 {
     font-family: "Heebo", sans-serif;
     font-size: 36px;
-    color: #222222;
+    color: #000000;
     font-weight: bold;
     margin-bottom: 15px;
     text-transform: uppercase; }
@@ -149,7 +150,7 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 12px/100px "Roboto", sans-serif;
         text-transform: uppercase;
-        color: #222222;
+        color: #000000;
         padding: 0px;
         display: inline-block; }
         .header_area .navbar .nav .nav-item .nav-link:after {
@@ -200,7 +201,7 @@ button:focus {
             transition: all 0.4s linear; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
               line-height: 45px;
-              color: #222222;
+              color: #000000;
               padding: 0px 30px;
               transition: all 150ms linear;
               display: block;
@@ -223,7 +224,7 @@ button:focus {
       font-size: 12px;
       line-height: 60px;
       display: inline-block;
-      color: #222222;
+      color: #000000;
       margin-left: 80px; }
       .header_area .navbar .search i {
         font-weight: 600; }
@@ -258,7 +259,7 @@ button:focus {
       display: none; }
   .header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 70px;
-    color: #222222; }
+    color: #000000; }
 
 .top_menu {
   background: #ec9d5f; }
@@ -302,7 +303,7 @@ button:focus {
       align-self: center; }
     .home_banner_area .banner_inner .banner_content {
       text-align: left;
-      color: #222222; }
+      color: #000000; }
       .home_banner_area .banner_inner .banner_content h5 {
         font-size: 14px;
         font-family: "Roboto", sans-serif;
@@ -374,6 +375,7 @@ button:focus {
 .banner_area {
   position: relative;
   z-index: 1;
+  background: url(../img/banner/agw_background.png) no-repeat scroll center center;
   min-height: 430px; }
   .banner_area .banner_inner {
     position: relative;
@@ -385,7 +387,7 @@ button:focus {
     .banner_area .banner_inner .banner_content {
       margin-top: 70px; }
       .banner_area .banner_inner .banner_content h2 {
-        color: #222222;
+        color: #000000;
         font-size: 36px;
         font-family: "Heebo", sans-serif;
         margin-bottom: 0px;
@@ -410,6 +412,45 @@ button:focus {
           .banner_area .banner_inner .banner_content .page_link a:last-child:before {
             display: none; }
 
+.projects_banner_area {
+  position: relative;
+  z-index: 1;
+  background: url(../img/banner/agw_background.png) no-repeat scroll center center;
+  min-height: 430px; }
+  .projects_banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 430px;
+    z-index: 1; }
+    .projects_banner_area .banner_inner .banner_content {
+      margin-top: 70px; }
+      .projects_banner_area .banner_inner .banner_content h2 {
+        color: #000000;
+        font-size: 36px;
+        font-family: "Heebo", sans-serif;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .projects_banner_area .banner_inner .banner_content .page_link a {
+        font-size: 14px;
+        color: #777777;
+        font-family: "Roboto", sans-serif;
+        margin-right: 32px;
+        position: relative; }
+        .projects_banner_area .banner_inner .banner_content .page_link a:before {
+          content: "\e87a";
+          font-family: 'Linearicons-Free';
+          font-size: 14px;
+          position: absolute;
+          right: -25px;
+          top: 54%;
+          transform: translateY(-50%); }
+        .projects_banner_area .banner_inner .banner_content .page_link a:last-child {
+          margin-right: 0px; }
+          .projects_banner_area .banner_inner .banner_content .page_link a:last-child:before {
+            display: none; }
+
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -423,9 +464,10 @@ button:focus {
     color: #777777;
     font-size: 12px;
     font-family: "Roboto", sans-serif; }
+
 .l_blog_item .l_blog_text h4 {
   font-size: 21px;
-  color: #222222;
+  color: #000000;
   margin-bottom: 20px;
   transition: all 300ms linear 0s;
   font-family: "Heebo", sans-serif;
@@ -434,6 +476,7 @@ button:focus {
   max-width: 300px; }
   .l_blog_item .l_blog_text h4:hover {
     color: #8490ff; }
+
 .l_blog_item .l_blog_text p {
   margin-bottom: 0px;
   font-size: 14px;
@@ -486,7 +529,7 @@ button:focus {
   .causes_item .causes_text {
     padding: 30px 35px 40px 30px; }
     .causes_item .causes_text h4 {
-      color: #222222;
+      color: #000000;
       font-family: "Roboto", sans-serif;
       font-size: 18px;
       font-weight: 600;
@@ -515,7 +558,7 @@ button:focus {
       border-color: #eeeeee;
       background: #fff;
       font-size: 14px;
-      color: #222222; }
+      color: #000000; }
 
 /* End Causes Area css
 ============================================================================================ */
@@ -549,7 +592,7 @@ button:focus {
   display: inline-block;
   padding: 1px 18px;
   text-align: center;
-  color: #222222; }
+  color: #000000; }
   .tags .tag_btn:before {
     background: #8490ff; }
   .tags .tag_btn + .tag_btn {
@@ -608,7 +651,7 @@ button:focus {
     padding-bottom: 20px; }
     .blog_info .post_tag a {
       font: 300 14px/21px "Roboto", sans-serif;
-      color: #222222; }
+      color: #000000; }
       .blog_info .post_tag a:hover {
         color: #777777; }
       .blog_info .post_tag a.active {
@@ -620,7 +663,7 @@ button:focus {
     padding-bottom: 12px;
     display: inline-block; }
     .blog_info .blog_meta li a i {
-      color: #222222;
+      color: #000000;
       font-size: 16px;
       font-weight: 600;
       padding-left: 15px;
@@ -637,7 +680,7 @@ button:focus {
   .blog_details h2 {
     font-size: 24px;
     line-height: 36px;
-    color: #222222;
+    color: #000000;
     font-weight: 600;
     transition: all 0.3s linear; }
     .blog_details h2:hover {
@@ -649,7 +692,7 @@ button:focus {
   font-size: 14px;
   line-height: 36px;
   display: inline-block;
-  color: #222222;
+  color: #000000;
   font-weight: 500;
   padding: 0px 30px;
   background: #fff; }
@@ -704,7 +747,7 @@ button:focus {
     .blog_right_sidebar .author_widget h4 {
       font-size: 18px;
       line-height: 20px;
-      color: #222222;
+      color: #000000;
       margin-bottom: 5px;
       margin-top: 30px; }
     .blog_right_sidebar .author_widget p {
@@ -713,7 +756,7 @@ button:focus {
       padding: 7px 0px 15px; }
       .blog_right_sidebar .author_widget .social_icon a {
         font-size: 14px;
-        color: #222222;
+        color: #000000;
         transition: all 0.2s linear; }
         .blog_right_sidebar .author_widget .social_icon a + a {
           margin-left: 20px; }
@@ -726,7 +769,7 @@ button:focus {
     .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
       font-size: 14px;
       line-height: 20px;
-      color: #222222;
+      color: #000000;
       margin-bottom: 4px;
       transition: all 0.3s linear; }
       .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
@@ -808,7 +851,7 @@ button:focus {
       padding: 0px 13px;
       margin-bottom: 8px;
       transition: all 0.3s ease 0s;
-      color: #222222;
+      color: #000000;
       font-size: 12px; }
       .blog_right_sidebar .tag_cloud_widget ul li a:hover {
         background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
@@ -872,11 +915,13 @@ button:focus {
       font-size: 14px;
       transition: all 0.2s linear; }
       .single-post-area .social-links li a:hover {
-        color: #222222; }
+        color: #000000; }
+
 .single-post-area .blog_details {
   padding-top: 26px; }
   .single-post-area .blog_details p {
     margin-bottom: 10px; }
+
 .single-post-area .quotes {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -887,13 +932,16 @@ button:focus {
   line-height: 24px;
   color: #777;
   font-style: italic; }
+
 .single-post-area .arrow {
   position: absolute; }
   .single-post-area .arrow .lnr {
     font-size: 20px;
     font-weight: 600; }
+
 .single-post-area .thumb .overlay-bg {
   background: rgba(0, 0, 0, 0.8); }
+
 .single-post-area .navigation-area {
   border-top: 1px solid #eee;
   padding-top: 30px;
@@ -903,7 +951,7 @@ button:focus {
   .single-post-area .navigation-area h4 {
     font-size: 18px;
     line-height: 25px;
-    color: #222222; }
+    color: #000000; }
   .single-post-area .navigation-area .nav-left {
     text-align: left; }
     .single-post-area .navigation-area .nav-left .thumb {
@@ -937,6 +985,7 @@ button:focus {
       opacity: 1; }
     .single-post-area .navigation-area .nav-right:hover .thumb img {
       opacity: .5; }
+
 @media (max-width: 991px) {
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px; } }
@@ -952,13 +1001,13 @@ button:focus {
   .comments-area h4 {
     text-align: center;
     margin-bottom: 50px;
-    color: #222222;
+    color: #000000;
     font-size: 18px; }
   .comments-area h5 {
     font-size: 16px;
     margin-bottom: 0px; }
   .comments-area a {
-    color: #222222; }
+    color: #000000; }
   .comments-area .comment-list {
     padding-bottom: 48px; }
     .comments-area .comment-list:last-child {
@@ -983,7 +1032,7 @@ button:focus {
     margin-bottom: 0px; }
   .comments-area .btn-reply {
     background-color: #fff;
-    color: #222222;
+    color: #000000;
     border: 1px solid #eee;
     padding: 2px 18px;
     font-size: 12px;
@@ -1006,7 +1055,7 @@ button:focus {
     margin-bottom: 50px;
     font-size: 18px;
     line-height: 22px;
-    color: #222222; }
+    color: #000000; }
   .comment-form .name {
     padding-left: 0px; }
     @media (max-width: 767px) {
@@ -1089,7 +1138,7 @@ button:focus {
             -webkit-text-fill-color: transparent; }
         .home_map_area .home_details .box_home_details .media .media-body h4 {
           font-size: 14px;
-          color: #222222;
+          color: #000000;
           text-transform: uppercase; }
         .home_map_area .home_details .box_home_details .media .media-body p {
           margin-bottom: 0px; }
@@ -1154,6 +1203,7 @@ button:focus {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     color: #999999; }
+
 .reservation_form .form-group .res_select {
   height: 40px;
   border: 1px solid #eeeeee;
@@ -1175,6 +1225,7 @@ button:focus {
     margin-top: -17px;
     font-size: 13px;
     right: 22px; }
+
 .reservation_form .form-group:last-child {
   text-align: center; }
 
@@ -1202,9 +1253,9 @@ button:focus {
     color: "Roboto", sans-serif;
     font-weight: bold;
     margin-bottom: 0px;
-    color: #222222; }
+    color: #000000; }
     .contact_info .info_item h6 a {
-      color: #222222; }
+      color: #000000; }
   .contact_info .info_item p {
     font-size: 14px;
     line-height: 24px;
@@ -1235,6 +1286,7 @@ button:focus {
     resize: none; }
     .contact_form .form-group textarea.form-control {
       height: 140px; }
+
 .contact_form .submit_btn {
   margin-top: 20px;
   cursor: pointer; }
@@ -1310,10 +1362,10 @@ button:focus {
 /*==============Elements Button Area css ================*/
 .elements_button .title_color {
   margin-bottom: 30px;
-  color: #222222; }
+  color: #000000; }
 
 .title_color {
-  color: #222222; }
+  color: #000000; }
 
 .button-group-area {
   margin-top: 15px; }
@@ -1327,7 +1379,7 @@ button:focus {
     margin-right: 10px; }
   .button-group-area .link {
     text-decoration: underline;
-    color: #222222;
+    color: #000000;
     background: transparent; }
     .button-group-area .link:hover {
       color: #fff; }
@@ -1454,6 +1506,7 @@ button:focus {
 @media (max-width: 767.98px) {
   .generic-banner .height {
     height: 400px; } }
+
 .generic-banner .generic-banner-content h2 {
   line-height: 1.2em;
   margin-bottom: 20px; }
@@ -1461,6 +1514,7 @@ button:focus {
 @media (max-width: 991.98px) {
   .generic-banner .generic-banner-content h2 br {
     display: none; } }
+
 .generic-banner .generic-banner-content p {
   text-align: center;
   font-size: 16px; }
@@ -1468,6 +1522,7 @@ button:focus {
 @media (max-width: 991.98px) {
   .generic-banner .generic-banner-content p br {
     display: none; } }
+
 .generic-content h1 {
   font-weight: 600; }
 
@@ -1507,9 +1562,11 @@ button:focus {
 @media (max-width: 767px) {
   .typo-sec {
     margin-bottom: 30px; } }
+
 @media (max-width: 767px) {
   .element-wrap {
     margin-top: 30px; } }
+
 b, sup, sub, u, del {
   color: #f8b600; }
 
@@ -1750,6 +1807,7 @@ h6 {
 @media (max-width: 991px) {
   .progress-table-wrap {
     overflow-x: scroll; } }
+
 .progress-table {
   background: #fff;
   padding: 15px 0px 30px 0px;
@@ -2176,7 +2234,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .single-defination h4 {
-  color: #222222; }
+  color: #000000; }
 
 .primary-checkbox input:checked + label {
   background: url(../img/elements/primary-check.png) no-repeat center center/cover;
@@ -2417,6 +2475,7 @@ h6 {
 @media (max-width: 991px) {
   .left-align-p p {
     margin-top: 20px; } }
+
 .form-select {
   height: 40px;
   width: 100%; }
@@ -2536,7 +2595,7 @@ h6 {
   display: inline-block;
   background: #f9f9ff;
   padding: 0px 50px;
-  color: #222222;
+  color: #000000;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -2570,7 +2629,7 @@ h6 {
 .white_bg_btn {
   background: #fff;
   display: inline-block;
-  color: #222222;
+  color: #000000;
   line-height: 40px;
   padding: 0px 28px;
   font-size: 14px;
@@ -2590,7 +2649,7 @@ h6 {
   font-size: 13px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  color: #222222;
+  color: #000000;
   line-height: 34px;
   display: inline-block; }
   .blog_btn:hover {
@@ -2663,7 +2722,7 @@ h6 {
     margin-top: 20px; }
     .team_item .team_name h4 {
       margin-bottom: 5px;
-      color: #222222;
+      color: #000000;
       font-family: "Roboto", sans-serif;
       font-weight: 500;
       font-size: 20px;
@@ -2689,18 +2748,19 @@ h6 {
 /* Welcome Area css
 ============================================================================================ */
 .welcome_inner .welcome_img {
-  background: #eeeeee;
-  margin-left: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px; }
-  .welcome_inner .welcome_img img {
-    margin-top: -30px; }
+  width: 100%; }
+  .welcome_inner .welcome_img .col-lg-6 {
+    vertical-align: middle;
+    align-self: center;
+    margin-left: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px; }
 
 .welcome_text {
   margin-top: 45px; }
   .welcome_text h4 {
-    color: #222222;
+    color: #000000;
     font-family: "Heebo", sans-serif;
     font-size: 36px;
     margin-bottom: 18px;
@@ -2725,7 +2785,7 @@ h6 {
     font-size: 24px;
     font-family: "Heebo", sans-serif;
     font-weight: bold;
-    color: #222222;
+    color: #000000;
     margin-bottom: 5px;
     margin-top: 10px; }
   .wel_item p {
@@ -2738,7 +2798,7 @@ h6 {
   box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
   padding: 50px 35px; }
   .tools_expert h3 {
-    color: #222222;
+    color: #000000;
     font-size: 21px;
     text-transform: uppercase; }
   .tools_expert .skill_main .skill_item {
@@ -2802,7 +2862,7 @@ h6 {
       color: #e1e1e1;
       line-height: 60px; }
   .feature_item h4 {
-    color: #222222;
+    color: #000000;
     font-size: 21px;
     font-family: "Heebo", sans-serif;
     font-weight: bold;
@@ -2867,11 +2927,16 @@ h6 {
     bottom: 30px;
     padding-left: 30px;
     padding-right: 30px; }
+    .projects_item .projects_text h3 {
+      color: 0;
+      font-size: 21px;
+      text-transform: uppercase;
+      margin-bottom: 18px; }
     .projects_item .projects_text h4 {
       font-size: 21px;
       font-family: "Heebo", sans-serif;
       font-weight: bold;
-      color: #222222;
+      color: #000000;
       margin-bottom: 5px;
       transition: all 300ms linear 0s;
       text-transform: uppercase;
@@ -2892,35 +2957,37 @@ h6 {
 ============================================================================================ */
 .portfolio_details_inner .row {
   margin-bottom: 65px; }
+
 .portfolio_details_inner p {
   margin-bottom: 30px;
   font-size: 14px; }
   .portfolio_details_inner p:last-child {
     margin-bottom: 0px; }
-.portfolio_details_inner .portfolio_right_text {
+
+.portfolio_right_text {
   padding-left: 98px; }
-  .portfolio_details_inner .portfolio_right_text h4 {
-    color: #222222;
+  .portfolio_right_text .list h4 {
+    color: #000000;
     font-size: 21px;
     text-transform: uppercase;
     margin-bottom: 18px; }
-  .portfolio_details_inner .portfolio_right_text p {
+  .portfolio_right_text .list p {
     margin-bottom: 25px;
     font-size: 14px; }
-  .portfolio_details_inner .portfolio_right_text .list li {
+  .portfolio_right_text .list li {
     margin-bottom: 7px;
     color: #777777;
     font-weight: normal;
     font-size: 14px; }
-    .portfolio_details_inner .portfolio_right_text .list li span {
+    .portfolio_right_text .list li span {
       font-size: 14px;
-      color: #222222;
+      color: #000000;
       font-weight: 500;
       width: 97px;
       display: inline-block; }
-    .portfolio_details_inner .portfolio_right_text .list li:last-child {
+    .portfolio_right_text .list li:last-child {
       margin-bottom: 0px; }
-    .portfolio_details_inner .portfolio_right_text .list li i {
+    .portfolio_right_text .list li i {
       color: #f1cd09; }
 
 /* End Portfolio Details Area css
@@ -2952,11 +3019,12 @@ h6 {
   align-self: center; }
 
 .test_title h2 {
-  color: #222222;
+  color: #000000;
   font-size: 36px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 12px; }
+
 .test_title p {
   margin-bottom: 0px; }
 
@@ -2968,7 +3036,7 @@ h6 {
   .testi_item p {
     font-style: italic; }
   .testi_item h4 {
-    color: #222222;
+    color: #000000;
     font-size: 20px;
     text-transform: uppercase; }
   .testi_item a {
@@ -3062,6 +3130,7 @@ h6 {
   font-family: "Roboto", sans-serif;
   color: #777777;
   margin-bottom: 10px; }
+
 .social_widget .list li {
   margin-right: 17px;
   display: inline-block; }
@@ -3083,5 +3152,3 @@ h6 {
 /* End Footer Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
-
-/*# sourceMappingURL=style.css.map */

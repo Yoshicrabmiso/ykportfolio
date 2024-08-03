@@ -1,7 +1,7 @@
 /* Projects Area css
 ============================================================================================ */
 .projects_area{
-	
+
 }
 .projects_fillter{
 	.filter{
@@ -52,6 +52,12 @@
 		bottom: 30px;
 		padding-left: 30px;
 		padding-right: 30px;
+    h3{
+      color: blue($color: #000000);
+      font-size: 21px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
 		h4{
 			font-size: 21px;
 			font-family: $hee;
@@ -86,7 +92,6 @@
 /* Portfolio Details Area css
 ============================================================================================ */
 .portfolio_details_area{
-	
 }
 .portfolio_details_inner{
 	.row{
@@ -99,19 +104,21 @@
 			margin-bottom: 0px;
 		}
 	}
+  }
+
 	.portfolio_right_text{
 		padding-left: 98px;
-		h4{
-			color: $dip;
-			font-size: 21px;
-			text-transform: uppercase;
-			margin-bottom: 18px;
-		}
-		p{
-			margin-bottom: 25px;
-			font-size: 14px;
-		}
 		.list{
+      h4{
+        color: $dip;
+        font-size: 21px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+      }
+      p{
+        margin-bottom: 25px;
+        font-size: 14px;
+      }
 			li{
 				margin-bottom: 7px;
 				span{
@@ -133,7 +140,6 @@
 			}
 		}
 	}
-}
 
 /* End Portfolio Details Area css
 ============================================================================================ */
