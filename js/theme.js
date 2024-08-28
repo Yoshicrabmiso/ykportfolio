@@ -1,17 +1,17 @@
 ;(function($){
     "use strict"
-	
-	
-	var nav_offset_top = $('header').height() + 50; 
+
+
+	var nav_offset_top = $('header').height() + 50;
     /*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
 
-	//* Navbar Fixed  
+	//* Navbar Fixed
     function navbarFixed(){
-        if ( $('.header_area').length ){ 
+        if ( $('.header_area').length ){
             $(window).scroll(function() {
-                var scroll = $(window).scrollTop();   
+                var scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top ) {
                     $(".header_area").addClass("navbar_fixed");
                 } else {
@@ -21,8 +21,8 @@
         };
     };
     navbarFixed();
-	
-	
+
+
 	/*----------------------------------------------------*/
     /*  Parallax Effect js
     /*----------------------------------------------------*/
@@ -30,8 +30,8 @@
     	$('.bg-parallax').parallax();
 	}
 	parallaxEffect();
-	
-	
+
+
 	/*----------------------------------------------------*/
     /*  Clients Slider
     /*----------------------------------------------------*/
@@ -44,7 +44,7 @@
                 nav: false,
                 autoplay: false,
                 smartSpeed: 1500,
-                dots:false, 
+                dots:false,
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -74,19 +74,19 @@
         $('#mc_embed_signup').find('form').ajaxChimp();
     }
     mailChimp();
-	
+
 	$('select').niceSelect();
-	
+
 	/*----------------------------------------------------*/
     /*  Simple LightBox js
     /*----------------------------------------------------*/
     $('.imageGallery1 .light').simpleLightbox();
-	
+
 	$('.counter').counterUp({
 		delay: 10,
 		time: 1000
 	});
-	
+
 	$(".skill_main").each(function() {
         $(this).waypoint(function() {
             var progressBar = $(".progress-bar");
@@ -99,8 +99,8 @@
 
         });
     });
-	
-	
+
+
 	/*----------------------------------------------------*/
     /*  Isotope Fillter js
     /*----------------------------------------------------*/
@@ -114,9 +114,9 @@
                         duration: 750,
                         easing: 'linear'
                     }
-                }); 
+                });
             });
-			
+
             // Add isotope click function
             $(".filter li").on('click',function(){
                 $(".filter li").removeClass("active");
@@ -136,8 +136,8 @@
         }
     }
     projects_isotope();
-	
-	
+
+
 	/*----------------------------------------------------*/
     /*  Testimonials Slider
     /*----------------------------------------------------*/
@@ -150,7 +150,7 @@
                 nav: false,
                 autoplay: true,
                 smartSpeed: 1500,
-                dots:true, 
+                dots:true,
                 responsiveClass: true,
                 responsive: {
                     0: {
@@ -164,8 +164,8 @@
         }
     }
     testimonials_slider();
-	
-	
+
+
 	/*----------------------------------------------------*/
     /*  Testimonials Slider
     /*----------------------------------------------------*/
@@ -178,7 +178,7 @@
 //                nav: true,
 //                autoplay: false,
 //                smartSpeed: 1500,
-//                dots:true, 
+//                dots:true,
 //				navContainer: '.testimonials_area',
 //                navText: ['<i class="lnr lnr-arrow-up"></i>','<i class="lnr lnr-arrow-down"></i>'],
 //                responsiveClass: true,
@@ -194,12 +194,12 @@
 //        }
 //    }
 //    testimonials_slider();
-	
-	
+
+
 	/*----------------------------------------------------*/
     /*  Google map js
     /*----------------------------------------------------*/
-     
+
     if ( $('#mapBox').length ){
         var $lat = $('#mapBox').data('lat');
         var $lon = $('#mapBox').data('lon');
@@ -406,11 +406,11 @@
             ]
         });
     }
-	
+
 	/*----------------------------------------------------*/
     /*  Google map js
     /*----------------------------------------------------*/
-     
+
     if ( $('#mapBox2').length ){
         var $lat = $('#mapBox2').data('lat');
         var $lon = $('#mapBox2').data('lon');
@@ -446,6 +446,7 @@
 			]
         });
     }
-	
+
 
 })(jQuery)
+

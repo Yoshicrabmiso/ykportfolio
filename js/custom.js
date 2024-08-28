@@ -1,15 +1,15 @@
 ;(function($){
     "use strict"
-    var nav_offset_top = $('.header_area').height()+50; 
+    var nav_offset_top = $('.header_area').height()+50;
     /*-------------------------------------------------------------------------------
-	  Navbar 
+	  Navbar
 	-------------------------------------------------------------------------------*/
 
-	//* Navbar Fixed  
+	//* Navbar Fixed
     function navbarFixed(){
-        if ( $('.header_area').length ){ 
+        if ( $('.header_area').length ){
             $(window).scroll(function() {
-                var scroll = $(window).scrollTop();   
+                var scroll = $(window).scrollTop();
                 if (scroll >= nav_offset_top ) {
                     $(".header_area").addClass("navbar_fixed");
                 } else {
@@ -19,7 +19,7 @@
         };
     };
     navbarFixed();
-    
+
     function testimonialSlider(){
         if ( $('.testimonial_slider').length ){
             $('.testimonial_slider').owlCarousel({
@@ -43,27 +43,27 @@
         }
     }
     testimonialSlider();
-    
-    //------- Mailchimp js --------//  
 
-    function mailChimp(){
-        $('#mc_embed_signup').find('form').ajaxChimp();
-    }
-    mailChimp();
-    
-    /* ===== Parallax Effect===== */
-	
-	function parallaxEffect() {
-    	$('.bg-parallax').parallax();
-	}
-	parallaxEffect();
-    
-    
-    $('select').niceSelect();
-    $('#datetimepicker11,#datetimepicker1').datetimepicker({
-        daysOfWeekDisabled: [0, 6]
-    });
-    
+    //------- Mailchimp js --------//
+
+  //   function mailChimp(){
+  //       $('#mc_embed_signup').find('form').ajaxChimp();
+  //   }
+  //   mailChimp();
+
+  //   /* ===== Parallax Effect===== */
+
+	// function parallaxEffect() {
+  //   	$('.bg-parallax').parallax();
+	// }
+	// parallaxEffect();
+
+
+  //   $('select').niceSelect();
+  //   $('#datetimepicker11,#datetimepicker1').datetimepicker({
+  //       daysOfWeekDisabled: [0, 6]
+  //   });
+
      /*---------gallery isotope js-----------*/
     function galleryMasonry(){
         if ( $('#gallery').length ){
@@ -82,16 +82,16 @@
         }
     }
     galleryMasonry();
-	
+
 	/*----------------------------------------------------*/
     /*  Simple LightBox js
     /*----------------------------------------------------*/
     $('.imageGallery1 .light').simpleLightbox();
-    
+
     /*----------------------------------------------------*/
     /*  Google map js
     /*----------------------------------------------------*/
-    
+
     if ( $('#mapBox').length ){
         var $lat = $('#mapBox').data('lat');
         var $lon = $('#mapBox').data('lon');
@@ -300,3 +300,41 @@
     }
 
 })(jQuery)
+
+  /*  zoom_in_image js
+    /*----------------------------------------------------*/
+
+function change(element) {
+  element.classList.toggle("fullsize");
+}
+
+
+
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Get all images with the class "myImg" and set up the click event listener
+var images = document.getElementsByClassName("myImg");
+for (let img of images) {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Close the modal when clicking outside of the image or caption
+modal.onclick = function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};

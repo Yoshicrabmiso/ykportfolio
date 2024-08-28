@@ -1,145 +1,342 @@
 /* Projects Area css
 ============================================================================================ */
-.projects_area{
+.projects_area {}
 
+.projects_fillter {
+  .filter {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    li {
+      display: inline-block;
+      margin-right: 30px;
+
+      a {
+        font-size: 13px;
+        font-family: $rob;
+        color: $pfont;
+      }
+
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      &.active {
+        a {
+          color: $baseColor;
+        }
+      }
+    }
+  }
 }
-.projects_fillter{
-	.filter{
-		text-align: center;
-		margin-top: 70px;
-		margin-bottom: 50px;
-		li{
-			display: inline-block;
-			margin-right: 30px;
-			a{
-				font-size: 13px;
-				font-family: $rob;
-				color: $pfont;
-			}
-			&:last-child{
-				margin-right: 0px;
-			}
-			&.active{
-				a{
-					color: $baseColor;
-				}
-			}
-		}
-	}
+
+.projects_inner {
+  margin-bottom: -30px;
 }
-.projects_inner{
-	margin-bottom: -30px;
-}
-.projects_item{
-	position: relative;
-	border-radius: 5px;
-	overflow: hidden;
-	margin-bottom: 30px;
-	&:before{
-		content: "";
-		background: rgba(255, 255, 255, .80);
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-		transition: all 300ms ease;
-	}
-	.projects_text{
-		position: absolute;
-		left: 0px;
-		bottom: 30px;
-		padding-left: 30px;
-		padding-right: 30px;
-    h3{
+
+.projects_item {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  &:before {
+    content: "";
+    background: rgba(255, 255, 255, .80);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms ease;
+  }
+
+  .projects_text {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    h3 {
       color: blue($color: #000000);
       font-size: 21px;
       text-transform: uppercase;
       margin-bottom: 18px;
     }
-		h4{
-			font-size: 21px;
-			font-family: $hee;
-			font-weight: bold;
-			color: $dip;
-			margin-bottom: 5px;
-			@include transition;
-			text-transform: uppercase;
-			cursor: pointer;
-		}
-		p{
-			margin-bottom: 0px;
-			font-size: 14px;
-		}
-	}
-	&:hover{
-		&:before{
-			opacity: 1;
-		}
-		.projects_text{
-			h4{
-				background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-			}
-		}
-	}
+
+    h4 {
+      font-size: 21px;
+      font-family: $hee;
+      font-weight: bold;
+      color: $dip;
+      margin-bottom: 5px;
+      @include transition;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    p {
+      margin-bottom: 0px;
+      font-size: 14px;
+    }
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+
+    .projects_text {
+      h4 {
+        background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }
+
 /* End Projects Area css
 ============================================================================================ */
 
 /* Portfolio Details Area css
 ============================================================================================ */
-.portfolio_details_area{
+.agw-background-color {
+  background-color: $AGWbaseColor;
 }
-.portfolio_details_inner{
-	.row{
-		margin-bottom: 65px;
-	}
-	p{
-		margin-bottom: 30px;
-		font-size: 14px;
-		&:last-child{
-			margin-bottom: 0px;
-		}
-	}
+.agw-background-color-2 {
+  background: linear-gradient(45deg, $AGWlightblue, $AGWblue);
+}
+
+.portfolio_details_area {
+  .container {
+    background: linear-gradient(109.54deg, rgba(255, 255, 255, .256) -16%, rgba(255, 255, 255, .032) 105.19%);
+    backdrop-filter: blur(30.1714px);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+  }
+}
+
+.portfolio_details_inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .row {
+    margin-bottom: 65px;
+    margin: auto;
+    width: 85%;
+    padding: 20px
+  }
+  h4 {
+    color: $dip;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
   }
 
-	.portfolio_right_text{
-		padding-left: 98px;
-		.list{
-      h4{
-        color: $dip;
-        font-size: 21px;
-        text-transform: uppercase;
-        margin-bottom: 18px;
-      }
-      p{
-        margin-bottom: 25px;
-        font-size: 14px;
-      }
-			li{
-				margin-bottom: 7px;
-				span{
-					font-size: 14px;
-					color: $dip;
-					font-weight: 500;
-					width: 97px;
-					display: inline-block;
-				}
-				color: $pfont;
-				font-weight: normal;
-				font-size: 14px;
-				&:last-child{
-					margin-bottom: 0px;
-				}
-				i{
-					color: #f1cd09;
-				}
-			}
-		}
-	}
+  .project_logo{
+    margin: auto;
+    img {
+      max-width: 40vw;
+    }
+  }
 
+  #carouselExampleInterval{
+    img {
+      width: 50%;
+    }
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 16px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  #video {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.portfolio_row_text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .portfolio_row_paragraph{
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: $dip;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .list {
+
+    p {
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+
+    li {
+      margin-bottom: 7px;
+
+      span {
+        font-size: 16px;
+        color: $dip;
+        font-weight: 500;
+        display: inline-block;
+      }
+
+
+      font-weight: normal;
+      font-size: 16px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+
+      i {
+        color: #f1cd09;
+      }
+    }
+  }
+}
+
+
+.faq_answer_text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .col{
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  h4 {
+    color: $dip;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .img{
+    width: 100%;
+    object-fit: cover;
+    background-position: 0%;
+
+   }
+  .p {
+    margin-bottom: 30px;
+    font-size: 16px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
 /* End Portfolio Details Area css
+============================================================================================ */
+
+/* Lightbox
+============================================================================================ */
+
+.zoom {
+  width: 600px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* lightbox */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 80px;
+  right: 300px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/* End of lightbox
 ============================================================================================ */
