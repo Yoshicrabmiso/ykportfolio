@@ -54,6 +54,10 @@ a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
+a img {
+  width: auto;
+  height: 50px;
+}
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
@@ -66,7 +70,7 @@ a:hover, a:focus {
 body {
   line-height: 26px;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: normal;
 }
 
@@ -132,7 +136,7 @@ button:focus {
 .main_title h2 {
   font-family: "Heebo", sans-serif;
   font-size: 36px;
-  color: #4a15d1;
+  color: #040404;
   font-weight: bold;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -141,7 +145,7 @@ button:focus {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   line-height: 26px;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 0px;
   max-width: 570px;
   margin: auto;
@@ -156,22 +160,62 @@ button:focus {
 
 /* End Main Title Area css
 ============================================================================================ */
-.img {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+/*custom homepage css
+============================================================================================ */
+/* Setting fade transition and default settings */
+body {
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
 }
 
-.fullsize {
-  z-index: 999;
-  cursor: zoom-out;
-  display: block;
-  width: 90%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+.panel > div {
+  text-align: center; /* Center text and SVG content inside the inner div */
+}
+
+dotlottie-player {
+  margin: 0 auto; /* Center the Lottie animation */
+}
+
+/* colours */
+.color-violet {
+  background-color: #7A4EAB;
+}
+
+.color-indigo {
+  background-color: #4332CF;
+}
+
+.color-blue {
+  background-color: #2F8FED;
+}
+
+.color-green {
+  background-color: #4DCF42;
+}
+
+.color-yellow {
+  background-color: #FAEB33;
+}
+
+.color-orange {
+  background-color: #F19031;
+}
+
+.color-red {
+  background-color: #F2293A;
 }
 
 /*---------------------------------------------------- */
@@ -196,7 +240,7 @@ button:focus {
 .header_area .navbar .nav .nav-item .nav-link {
   font: 500 12px/100px "Roboto", sans-serif;
   text-transform: uppercase;
-  color: #4a15d1;
+  color: #040404;
   padding: 0px;
   display: inline-block;
 }
@@ -255,7 +299,7 @@ button:focus {
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
   line-height: 45px;
-  color: #4a15d1;
+  color: #040404;
   padding: 0px 30px;
   transition: all 150ms linear;
   display: block;
@@ -285,7 +329,7 @@ button:focus {
   font-size: 12px;
   line-height: 60px;
   display: inline-block;
-  color: #4a15d1;
+  color: #040404;
   margin-left: 80px;
 }
 .header_area .navbar .search i {
@@ -333,7 +377,7 @@ button:focus {
 }
 .header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
   line-height: 70px;
-  color: #4a15d1;
+  color: #040404;
 }
 
 .top_menu {
@@ -386,8 +430,9 @@ button:focus {
   align-self: center;
 }
 .home_banner_area .banner_inner .banner_content {
+  padding-top: 300px;
   text-align: left;
-  color: #4a15d1;
+  color: #040404;
 }
 .home_banner_area .banner_inner .banner_content h5 {
   font-size: 14px;
@@ -406,7 +451,7 @@ button:focus {
   margin-bottom: 20px;
 }
 .home_banner_area .banner_inner .banner_content p {
-  color: #777777;
+  color: #bebfc5;
   font-family: "Roboto", sans-serif;
   max-width: 680px;
   font-size: 14px;
@@ -486,7 +531,7 @@ button:focus {
   margin-top: 70px;
 }
 .banner_area .banner_inner .banner_content h2 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 36px;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
@@ -495,7 +540,7 @@ button:focus {
 }
 .banner_area .banner_inner .banner_content .page_link a {
   font-size: 14px;
-  color: #777777;
+  color: #bebfc5;
   font-family: "Roboto", sans-serif;
   margin-right: 32px;
   position: relative;
@@ -535,7 +580,7 @@ button:focus {
   margin-top: 70px;
 }
 .agw_banner_area .banner_inner .banner_content h2 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 36px;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
@@ -544,7 +589,7 @@ button:focus {
 }
 .agw_banner_area .banner_inner .banner_content .page_link a {
   font-size: 14px;
-  color: #777777;
+  color: #bebfc5;
   font-family: "Roboto", sans-serif;
   margin-right: 32px;
   position: relative;
@@ -587,7 +632,7 @@ button:focus {
   margin-top: 70px;
 }
 .nft_banner_area .banner_inner .banner_content h2 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 36px;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
@@ -596,7 +641,7 @@ button:focus {
 }
 .nft_banner_area .banner_inner .banner_content .page_link a {
   font-size: 14px;
-  color: #777777;
+  color: #bebfc5;
   font-family: "Roboto", sans-serif;
   margin-right: 32px;
   position: relative;
@@ -628,13 +673,13 @@ button:focus {
   margin-bottom: 15px;
 }
 .l_blog_item .l_blog_text .date a {
-  color: #777777;
+  color: #bebfc5;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
 }
 .l_blog_item .l_blog_text h4 {
   font-size: 21px;
-  color: #4a15d1;
+  color: #040404;
   margin-bottom: 20px;
   transition: all 300ms linear 0s;
   font-family: "Heebo", sans-serif;
@@ -708,7 +753,7 @@ button:focus {
   padding: 30px 35px 40px 30px;
 }
 .causes_item .causes_text h4 {
-  color: #4a15d1;
+  color: #040404;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -721,7 +766,7 @@ button:focus {
 .causes_item .causes_text p {
   font-size: 14px;
   line-height: 24px;
-  color: #777777;
+  color: #bebfc5;
   font-weight: 300;
   margin-bottom: 0px;
 }
@@ -741,7 +786,7 @@ button:focus {
   border-color: #eeeeee;
   background: #fff;
   font-size: 14px;
-  color: #4a15d1;
+  color: #040404;
 }
 
 /* End Causes Area css
@@ -765,7 +810,7 @@ button:focus {
   transition: all 0.3s linear;
 }
 .single-recent-blog-post .details .sec_h4:hover {
-  color: #777777;
+  color: #bebfc5;
 }
 .single-recent-blog-post .date {
   font-size: 14px;
@@ -784,7 +829,7 @@ button:focus {
   display: inline-block;
   padding: 1px 18px;
   text-align: center;
-  color: #4a15d1;
+  color: #040404;
 }
 .tags .tag_btn:before {
   background: #8490ff;
@@ -857,10 +902,10 @@ button:focus {
 }
 .blog_info .post_tag a {
   font: 300 14px/21px "Roboto", sans-serif;
-  color: #4a15d1;
+  color: #040404;
 }
 .blog_info .post_tag a:hover {
-  color: #777777;
+  color: #bebfc5;
 }
 .blog_info .post_tag a.active {
   color: #8490ff;
@@ -873,7 +918,7 @@ button:focus {
   display: inline-block;
 }
 .blog_info .blog_meta li a i {
-  color: #4a15d1;
+  color: #040404;
   font-size: 16px;
   font-weight: 600;
   padding-left: 15px;
@@ -894,7 +939,7 @@ button:focus {
 .blog_details h2 {
   font-size: 24px;
   line-height: 36px;
-  color: #4a15d1;
+  color: #040404;
   font-weight: 600;
   transition: all 0.3s linear;
 }
@@ -909,7 +954,7 @@ button:focus {
   font-size: 14px;
   line-height: 36px;
   display: inline-block;
-  color: #4a15d1;
+  color: #040404;
   font-weight: 500;
   padding: 0px 30px;
   background: #fff;
@@ -975,7 +1020,7 @@ button:focus {
 .blog_right_sidebar .author_widget h4 {
   font-size: 18px;
   line-height: 20px;
-  color: #4a15d1;
+  color: #040404;
   margin-bottom: 5px;
   margin-top: 30px;
 }
@@ -987,7 +1032,7 @@ button:focus {
 }
 .blog_right_sidebar .author_widget .social_icon a {
   font-size: 14px;
-  color: #4a15d1;
+  color: #040404;
   transition: all 0.2s linear;
 }
 .blog_right_sidebar .author_widget .social_icon a + a {
@@ -1004,7 +1049,7 @@ button:focus {
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
   font-size: 14px;
   line-height: 20px;
-  color: #4a15d1;
+  color: #040404;
   margin-bottom: 4px;
   transition: all 0.3s linear;
 }
@@ -1107,7 +1152,7 @@ button:focus {
   padding: 0px 13px;
   margin-bottom: 8px;
   transition: all 0.3s ease 0s;
-  color: #4a15d1;
+  color: #040404;
   font-size: 12px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
@@ -1184,7 +1229,7 @@ button:focus {
   transition: all 0.2s linear;
 }
 .single-post-area .social-links li a:hover {
-  color: #4a15d1;
+  color: #040404;
 }
 .single-post-area .blog_details {
   padding-top: 26px;
@@ -1224,7 +1269,7 @@ button:focus {
 .single-post-area .navigation-area h4 {
   font-size: 18px;
   line-height: 25px;
-  color: #4a15d1;
+  color: #040404;
 }
 .single-post-area .navigation-area .nav-left {
   text-align: left;
@@ -1293,7 +1338,7 @@ button:focus {
 .comments-area h4 {
   text-align: center;
   margin-bottom: 50px;
-  color: #4a15d1;
+  color: #040404;
   font-size: 18px;
 }
 .comments-area h5 {
@@ -1301,7 +1346,7 @@ button:focus {
   margin-bottom: 0px;
 }
 .comments-area a {
-  color: #4a15d1;
+  color: #040404;
 }
 .comments-area .comment-list {
   padding-bottom: 48px;
@@ -1337,7 +1382,7 @@ button:focus {
 }
 .comments-area .btn-reply {
   background-color: #fff;
-  color: #4a15d1;
+  color: #040404;
   border: 1px solid #eee;
   padding: 2px 18px;
   font-size: 12px;
@@ -1363,7 +1408,7 @@ button:focus {
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 22px;
-  color: #4a15d1;
+  color: #040404;
 }
 .comment-form .name {
   padding-left: 0px;
@@ -1468,7 +1513,7 @@ button:focus {
 }
 .home_map_area .home_details .box_home_details .media .media-body h4 {
   font-size: 14px;
-  color: #4a15d1;
+  color: #040404;
   text-transform: uppercase;
 }
 .home_map_area .home_details .box_home_details .media .media-body p {
@@ -1598,10 +1643,10 @@ button:focus {
   color: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
-  color: #4a15d1;
+  color: #040404;
 }
 .contact_info .info_item h6 a {
-  color: #4a15d1;
+  color: #040404;
 }
 .contact_info .info_item p {
   font-size: 14px;
@@ -1735,11 +1780,11 @@ button:focus {
 /*==============Elements Button Area css ================*/
 .elements_button .title_color {
   margin-bottom: 30px;
-  color: #4a15d1;
+  color: #040404;
 }
 
 .title_color {
-  color: #4a15d1;
+  color: #040404;
 }
 
 .button-group-area {
@@ -1759,7 +1804,7 @@ button:focus {
 }
 .button-group-area .link {
   text-decoration: underline;
-  color: #4a15d1;
+  color: #040404;
   background: transparent;
 }
 .button-group-area .link:hover {
@@ -2764,7 +2809,7 @@ h6 {
 }
 
 .single-defination h4 {
-  color: #4a15d1;
+  color: #040404;
 }
 
 .primary-checkbox input:checked + label {
@@ -3169,7 +3214,7 @@ h6 {
   display: inline-block;
   background: #f9f9ff;
   padding: 0px 50px;
-  color: #4a15d1;
+  color: #040404;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -3207,7 +3252,7 @@ h6 {
 .white_bg_btn {
   background: #fff;
   display: inline-block;
-  color: #4a15d1;
+  color: #040404;
   line-height: 40px;
   padding: 0px 28px;
   font-size: 14px;
@@ -3229,7 +3274,7 @@ h6 {
   font-size: 13px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  color: #4a15d1;
+  color: #040404;
   line-height: 34px;
   display: inline-block;
 }
@@ -3313,7 +3358,7 @@ h6 {
 }
 .team_item .team_name h4 {
   margin-bottom: 5px;
-  color: #4a15d1;
+  color: #040404;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -3322,7 +3367,7 @@ h6 {
 .team_item .team_name p {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 0px;
 }
 .team_item:hover .team_img:before {
@@ -3358,8 +3403,8 @@ h6 {
   margin-top: 45px;
 }
 .welcome_text h4 {
-  color: #4a15d1;
-  font-family: "Heebo", sans-serif;
+  color: #040404;
+  font-family: "Public Sans", sans-serif;
   font-size: 36px;
   margin-bottom: 18px;
   text-transform: uppercase;
@@ -3367,7 +3412,7 @@ h6 {
 .welcome_text p {
   max-width: 495px;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 14px;
   margin-bottom: 40px;
 }
@@ -3387,14 +3432,14 @@ h6 {
   font-size: 24px;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
-  color: #4a15d1;
+  color: #040404;
   margin-bottom: 5px;
   margin-top: 10px;
 }
 .wel_item p {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 0px;
 }
 
@@ -3403,7 +3448,7 @@ h6 {
   padding: 50px 35px;
 }
 .tools_expert h3 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 21px;
   text-transform: uppercase;
 }
@@ -3418,7 +3463,7 @@ h6 {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 15px;
 }
 .tools_expert .skill_main .skill_item .progress {
@@ -3465,7 +3510,8 @@ h6 {
   padding: 50px 35px;
   border-radius: 10px;
   transition: all 300ms linear 0s;
-  background: #fff;
+  -webkit-backdrop-filter: blur(30.1714px);
+          backdrop-filter: blur(30.1714px);
   margin-bottom: 30px;
 }
 .feature_item i {
@@ -3479,7 +3525,7 @@ h6 {
   line-height: 60px;
 }
 .feature_item h4 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 21px;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
@@ -3510,6 +3556,18 @@ h6 {
 /*----------------------------------------------------*/
 /* Projects Area css
 ============================================================================================ */
+.projects_area {
+  width: 75%;
+}
+.projects_area h2 {
+  font-family: "Public Sans", sans-serif;
+  color: #040404;
+}
+.projects_area p {
+  font-family: "Public Sans", sans-serif;
+  color: #040404;
+}
+
 .projects_fillter .filter {
   text-align: center;
   margin-top: 70px;
@@ -3521,8 +3579,8 @@ h6 {
 }
 .projects_fillter .filter li a {
   font-size: 13px;
-  font-family: "Roboto", sans-serif;
-  color: #777777;
+  font-family: "Public Sans", sans-serif;
+  color: #bebfc5;
 }
 .projects_fillter .filter li:last-child {
   margin-right: 0px;
@@ -3534,12 +3592,19 @@ h6 {
 .projects_inner {
   margin-bottom: -30px;
 }
+.projects_inner img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .projects_item {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 30px;
+  min-height: 360px;
 }
 .projects_item:before {
   content: "";
@@ -3553,6 +3618,7 @@ h6 {
   transition: all 300ms ease;
 }
 .projects_item .projects_text {
+  overflow: hidden;
   position: absolute;
   left: 0px;
   bottom: 30px;
@@ -3560,22 +3626,22 @@ h6 {
   padding-right: 30px;
 }
 .projects_item .projects_text h3 {
-  color: 0;
   font-size: 21px;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
 .projects_item .projects_text h4 {
   font-size: 21px;
-  font-family: "Heebo", sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-weight: bold;
-  color: #4a15d1;
+  color: #040404;
   margin-bottom: 5px;
   transition: all 300ms linear 0s;
   text-transform: uppercase;
   cursor: pointer;
 }
 .projects_item .projects_text p {
+  font-family: "Public Sans", sans-serif;
   margin-bottom: 0px;
   font-size: 14px;
 }
@@ -3620,7 +3686,7 @@ h6 {
   padding: 20px;
 }
 .portfolio_details_inner h4 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -3655,7 +3721,7 @@ h6 {
   margin-bottom: 10px;
 }
 .portfolio_row_text h4 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -3671,8 +3737,8 @@ h6 {
 }
 .portfolio_row_text .list li span {
   font-size: 16px;
-  color: #4a15d1;
-  font-weight: 500;
+  color: #040404;
+  font-weight: 700;
   display: inline-block;
 }
 .portfolio_row_text .list li:last-child {
@@ -3692,22 +3758,17 @@ h6 {
   padding-bottom: 30px;
 }
 .faq_answer_text h4 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
-.faq_answer_text .img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: 0%;
-}
-.faq_answer_text .p {
+
+.p {
   margin-bottom: 30px;
   font-size: 16px;
 }
-.faq_answer_text .p:last-child {
+.p:last-child {
   margin-bottom: 0px;
 }
 
@@ -3722,14 +3783,16 @@ h6 {
 }
 
 /* lightbox */
-#myImg {
+.myImg {
+  position: relative;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  display: block; /* Ensures the image behaves as a block-level element */
 }
 
-#myImg:hover {
-  opacity: 0.7;
+.myImg:hover {
+  opacity: 0.4;
 }
 
 /* The Modal (background) */
@@ -3752,7 +3815,6 @@ h6 {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
 }
 
 /* Caption of Modal Image */
@@ -3764,7 +3826,6 @@ h6 {
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
 }
 
 /* Add Animation */
@@ -3808,6 +3869,8 @@ h6 {
 }
 /* End of lightbox
 ============================================================================================ */
+/*custom homepage css
+============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Testimonials Area css
@@ -3842,7 +3905,7 @@ h6 {
 }
 
 .test_title h2 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 36px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -3862,7 +3925,7 @@ h6 {
   font-style: italic;
 }
 .testi_item h4 {
-  color: #4a15d1;
+  color: #040404;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -3896,7 +3959,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 30px;
 }
 .ab_widget p a {
@@ -3913,7 +3976,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 15px;
 }
 .news_widget .input-group input {
@@ -3968,7 +4031,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: #bebfc5;
   margin-bottom: 10px;
 }
 .social_widget .list li {
@@ -3999,18 +4062,19 @@ h6 {
 ============================================================================================ */
 /*---------------------------------------------------- */
 .faq-accordion-container {
+  width: 100%;
   padding: 10px 10px;
 }
 
 .faq-question {
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid #bebfc5;
   padding: 10px;
   cursor: pointer;
   position: relative;
 }
 
 .faq-question > h4 {
-  color: #4a15d1;
+  color: #040404;
 }
 
 .faq-question > .fa {
@@ -4040,5 +4104,5 @@ h6 {
 }
 
 .faq-accordion-container li.default-faq-open .faq-answer {
-  max-height: 2000px;
+  max-height: 4000px;
 }/*# sourceMappingURL=style.css.map */

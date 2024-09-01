@@ -1,4 +1,5 @@
 .faq-accordion-container {
+  width: 100%;
   padding: 10px 10px;
 }
 
@@ -40,5 +41,5 @@
 }
 
 .faq-accordion-container li.default-faq-open .faq-answer {
-  max-height: 2000px;
+  max-height: 4000px;
 }

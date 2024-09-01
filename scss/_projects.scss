@@ -1,6 +1,16 @@
 /* Projects Area css
 ============================================================================================ */
-.projects_area {}
+.projects_area {
+  width: 75%;
+  h2{
+    font-family: $public;
+    color:$dip;
+  }
+  p{
+    font-family: $public;
+    color:$dip;
+  }
+}
 
 .projects_fillter {
   .filter {
@@ -14,7 +24,7 @@
 
       a {
         font-size: 13px;
-        font-family: $rob;
+        font-family: $public;
         color: $pfont;
       }
 
@@ -33,6 +43,11 @@
 
 .projects_inner {
   margin-bottom: -30px;
+  img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
 .projects_item {
@@ -40,7 +55,7 @@
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 30px;
-
+min-height: 360px;
   &:before {
     content: "";
     background: rgba(255, 255, 255, .80);
@@ -54,6 +69,7 @@
   }
 
   .projects_text {
+    overflow: hidden;
     position: absolute;
     left: 0px;
     bottom: 30px;
@@ -61,7 +77,6 @@
     padding-right: 30px;
 
     h3 {
-      color: blue($color: #000000);
       font-size: 21px;
       text-transform: uppercase;
       margin-bottom: 18px;
@@ -69,7 +84,7 @@
 
     h4 {
       font-size: 21px;
-      font-family: $hee;
+      font-family: $public;
       font-weight: bold;
       color: $dip;
       margin-bottom: 5px;
@@ -79,6 +94,7 @@
     }
 
     p {
+      font-family: $public;
       margin-bottom: 0px;
       font-size: 14px;
     }
@@ -191,7 +207,7 @@
       span {
         font-size: 16px;
         color: $dip;
-        font-weight: 500;
+        font-weight: 700;
         display: inline-block;
       }
 
@@ -225,11 +241,6 @@
     text-transform: uppercase;
     margin-bottom: 18px;
   }
-  .img{
-    width: 100%;
-    object-fit: cover;
-    background-position: 0%;
-
    }
   .p {
     margin-bottom: 30px;
@@ -239,7 +250,7 @@
       margin-bottom: 0px;
     }
   }
-}
+
 /* End Portfolio Details Area css
 ============================================================================================ */
 
@@ -253,13 +264,48 @@
 }
 
 /* lightbox */
-#myImg {
+.myImg {
+  position: relative;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  display: block; /* Ensures the image behaves as a block-level element */
 }
+.myImg:hover{
+ opacity: 0.4;
+}
+// .myImg::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(255,255,255,0);
+//   transition: all 250ms ease-in-out;
+//   z-index: 1; /* Ensure the pseudo-element is on top of the image */
+//   border-radius: 5px; /* Match the border-radius of the image */
+// }
+// .myImg:hover::before {
+//   background-color: rgba(255,255,255,.3);
+// }
+// .myImg::after{
+//   content: '';
+//   background-image: url('/img/icon/zoom.svg');
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 40px;
+//   height: 40px;
+//   opacity: .3;
+//   transform: translate(-50%, -50%);
+// }
+// .myImg:hover::after {
+//   width: 50px;
+//   height: 50px;
+//   opacity: .6;
+// }
 
-#myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -276,12 +322,12 @@
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
 }
 
 /* Caption of Modal Image */
@@ -293,7 +339,6 @@
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
 }
 
 /* Add Animation */
@@ -339,4 +384,7 @@
   }
 }
 /* End of lightbox
+============================================================================================ */
+
+/*custom homepage css
 ============================================================================================ */
