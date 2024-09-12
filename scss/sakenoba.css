@@ -1,0 +1,102 @@
+.banner_container {
+  display: flex;
+  width: 70vw;
+  height: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 0px;
+}
+
+.sakenoba_heading {
+  font-size: 10vh;
+  line-height: 15vh;
+  font-weight: 700;
+}
+
+.project-sub-heading {
+  max-width: 70%;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.sakenoba_banner_img img {
+  width: 100%;
+}
+
+.sakenoba_body {
+  font-family: Roboto;
+}
+.sakenoba_body h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 46px;
+  line-height: 38px;
+  font-weight: 700;
+}
+.sakenoba_body p {
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+}
+.sakenoba_body strong {
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.sakenoba_body li {
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.sakenoba_grid {
+  display: grid;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 12px;
+  outline: rgb(51, 51, 51) solid 3px;
+  outline-offset: 0px;
+}
+.sakenoba_grid .col-md-6 {
+  text-align: center;
+}
+
+.sakenoba_grid2 {
+  display: grid;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.framework_title {
+  display: inline-block;
+  margin: 0px;
+  flex-flow: row;
+  font-family: Roboto;
+  color: rgba(25, 38, 90, 0.25);
+  font-size: 70px;
+  line-height: 71px;
+}
+
+.sakenoba_content_img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sakenoba_content_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=sakenoba.css.map */
