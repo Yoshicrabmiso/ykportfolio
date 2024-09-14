@@ -170,6 +170,7 @@
 	min-height: 430px;
   position: sticky;
   top: 0;
+  z-index: -100;
 	.banner_inner{
 		position: relative;
 		overflow: hidden;
