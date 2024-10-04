@@ -122,9 +122,11 @@ min-height: 360px;
 ============================================================================================ */
 .agw-background-color {
   background-color: $AGWbaseColor;
+  z-index: -2;
 }
 .agw-background-color-2 {
   background: linear-gradient(45deg, $AGWlightblue, $AGWblue);
+  z-index: -2;
 }
 
 .portfolio_details_area {

@@ -170,7 +170,6 @@
 	min-height: 430px;
   position: sticky;
   top: 0;
-  z-index: -100;
 	.banner_inner{
 		position: relative;
 		overflow: hidden;
@@ -234,7 +233,6 @@
   background-color: rgba(9, 132, 239, 0.7);
   background-blend-mode: lighten;
   position: sticky;
-
   top: 0;
 	.banner_inner{
 		position: relative;

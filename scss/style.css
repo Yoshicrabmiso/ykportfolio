@@ -3663,10 +3663,12 @@ h6 {
 ============================================================================================ */
 .agw-background-color {
   background-color: #F1D6D1;
+  z-index: -2;
 }
 
 .agw-background-color-2 {
   background: linear-gradient(45deg, #5fD0DF, #0075c9);
+  z-index: -2;
 }
 
 .portfolio_details_area .container {
