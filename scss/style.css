@@ -3671,6 +3671,9 @@ h6 {
   z-index: -2;
 }
 
+.portfolio_details_area {
+  z-index: 1000;
+}
 .portfolio_details_area .container {
   background: linear-gradient(109.54deg, rgba(255, 255, 255, 0.256) -16%, rgba(255, 255, 255, 0.032) 105.19%);
   -webkit-backdrop-filter: blur(30.1714px);
