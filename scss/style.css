@@ -3672,7 +3672,7 @@ h6 {
 }
 
 .portfolio_details_area {
-  z-index: 1000;
+  z-index: 10;
 }
 .portfolio_details_area .container {
   background: linear-gradient(109.54deg, rgba(255, 255, 255, 0.256) -16%, rgba(255, 255, 255, 0.032) 105.19%);
@@ -3740,14 +3740,13 @@ h6 {
 }
 .portfolio_row_text .list li {
   margin-bottom: 7px;
-  font-weight: normal;
-  font-size: 16px;
 }
 .portfolio_row_text .list li span {
   font-size: 16px;
   color: #040404;
   font-weight: 700;
   display: inline-block;
+  font-weight: normal;
 }
 .portfolio_row_text .list li:last-child {
   margin-bottom: 0px;
