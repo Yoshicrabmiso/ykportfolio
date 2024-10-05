@@ -74,12 +74,6 @@
   text-align: center;
 }
 
-.sakenoba_grid2 {
-  display: grid;
-  flex-direction: column;
-  border-radius: 12px;
-}
-
 .framework_title {
   display: inline-block;
   margin: 0px;

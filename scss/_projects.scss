@@ -133,6 +133,7 @@ min-height: 360px;
   z-index: 10;
   .container {
     background: linear-gradient(109.54deg, rgba(255, 255, 255, .256) -16%, rgba(255, 255, 255, .032) 105.19%);
+    -webkit-backdrop-filter: blur(30.1714px);
     backdrop-filter: blur(30.1714px);
     padding-top: 30px;
     padding-bottom: 10px;
