@@ -22,7 +22,7 @@
 .welcome_text{
 	margin-top: 45px;
 	h4{
-		color: $dip;
+		color: $white;
     font-family: $public;
 		font-size: 36px;
 		margin-bottom: 18px;
@@ -34,6 +34,7 @@
 		font-family: $public;
 		font-size: 14px;
 		margin-bottom: 40px;
+    color: $white;
 	}
 }
 .wel_item{
@@ -146,7 +147,7 @@
 		}
 	}
 	h4{
-		color: $dip;
+		color: $white;
 		font-size: 21px;
 		font-family: $hee;
 		font-weight: bold;

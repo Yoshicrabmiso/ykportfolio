@@ -4,11 +4,11 @@
   width: 75%;
   h2{
     font-family: $public;
-    color:$dip;
+    color:$white;
   }
   p{
     font-family: $public;
-    color:$dip;
+    color:$white;
   }
 }
 
@@ -25,7 +25,7 @@
       a {
         font-size: 13px;
         font-family: $public;
-        color: $pfont;
+        color: $white;
       }
 
       &:last-child {
@@ -34,7 +34,7 @@
 
       &.active {
         a {
-          color: $baseColor;
+          color: #F3C623;
         }
       }
     }
@@ -43,10 +43,12 @@
 
 .projects_inner {
   margin-bottom: -30px;
-  img{
+
+  img {
     width: 100%;
-    height: 400px;
+    min-height: 360px;
     object-fit: cover;
+    transition: opacity 0.3s ease; // Smooth transition for hover effect
   }
 }
 
@@ -55,10 +57,10 @@
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 30px;
-min-height: 360px;
+
   &:before {
     content: "";
-    background: rgba(255, 255, 255, .80);
+    background: rgba(255, 255, 255, 0.80);
     position: absolute;
     left: 0px;
     top: 0px;
@@ -69,12 +71,14 @@ min-height: 360px;
   }
 
   .projects_text {
+    word-break: break-word;
     overflow: hidden;
     position: absolute;
     left: 0px;
     bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: left;
 
     h3 {
       font-size: 21px;
@@ -83,14 +87,15 @@ min-height: 360px;
     }
 
     h4 {
-      font-size: 21px;
+      font-size: 18px;
       font-family: $public;
       font-weight: bold;
-      color: $dip;
+      color: $white;
       margin-bottom: 5px;
       @include transition;
       text-transform: uppercase;
       cursor: pointer;
+      overflow-wrap: break-word;
     }
 
     p {
@@ -103,6 +108,11 @@ min-height: 360px;
   &:hover {
     &:before {
       opacity: 1;
+    }
+
+    // Change img opacity on hover
+    img {
+      opacity: 0.5; // Set opacity to 50% when hovering
     }
 
     .projects_text {
@@ -120,19 +130,24 @@ min-height: 360px;
 
 /* Portfolio Details Area css
 ============================================================================================ */
+
 .agw-background-color {
   background-color: $AGWbaseColor;
   z-index: -2;
+  padding-bottom: 20px
 }
 .agw-background-color-2 {
   background: linear-gradient(45deg, $AGWlightblue, $AGWblue);
   z-index: -2;
+  padding-bottom: 20px
 }
 
 .portfolio_details_area {
+  margin-bottom: 20px;
   z-index: 10;
   .container {
-    background: linear-gradient(109.54deg, rgba(255, 255, 255, .256) -16%, rgba(255, 255, 255, .032) 105.19%);
+    background-color: rgba(255, 255, 255, 0.139);
+    // background: linear-gradient(109.54deg, rgba(255, 255, 255, .256) -16%, rgba(255, 255, 255, .032) 105.19%);
     -webkit-backdrop-filter: blur(30.1714px);
     backdrop-filter: blur(30.1714px);
     padding-top: 30px;
@@ -147,8 +162,9 @@ min-height: 360px;
   .row {
     margin-bottom: 65px;
     margin: auto;
-    width: 85%;
-    padding: 20px
+    @media screen and (min-width: 960px) {
+      width: 65%;
+    }
   }
   h4 {
     color: $dip;
@@ -158,9 +174,12 @@ min-height: 360px;
   }
 
   .project_logo{
-    margin: auto;
+    margin-left: 30px;
+    margin-right: 30px;
     img {
-      max-width: 40vw;
+      width: 100%;
+      height: 100%;
+    object-fit: contain;
     }
   }
 
@@ -169,14 +188,7 @@ min-height: 360px;
       width: 50%;
     }
   }
-  p {
-    margin-bottom: 30px;
-    font-size: 16px;
 
-    &:last-child {
-      margin-bottom: 0px;
-    }
-  }
 
   #video {
     object-fit: contain;
@@ -196,8 +208,14 @@ min-height: 360px;
     color: $dip;
     font-size: 20px;
     text-transform: uppercase;
+  padding-top: 15px;
     margin-bottom: 18px;
   }
+
+  p {
+    margin-bottom: 30px;
+  }
+
   .list {
 
     p {
@@ -213,7 +231,6 @@ min-height: 360px;
         color: $dip;
         font-weight: 700;
         display: inline-block;
-        font-weight: normal;
       }
 
 
@@ -229,6 +246,13 @@ min-height: 360px;
   }
 }
 
+.anonymous_review{
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: solid $white;
+  color: $white;
+  margin-bottom: 30px;
+}
 
 .faq_answer_text{
   margin-top: 30px;
@@ -267,47 +291,71 @@ min-height: 360px;
 }
 
 /* lightbox */
-.myImg {
+// .myImg {
+//   position: relative;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   transition: 0.3s;
+//   display: block; /* Ensures the image behaves as a block-level element */
+
+
+// }
+
+.col-img {
   position: relative;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  display: block; /* Ensures the image behaves as a block-level element */
 }
-.myImg:hover{
- opacity: 0.4;
+
+.myImg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 250ms ease-in-out;
+    z-index: 1; /* Ensure the pseudo-element is on top of the image */
+    border-radius: 5px; /* Match the border-radius of the image */
+  }
+
+  &:hover::before {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &::after {
+    z-index: 2;
+    content: '';
+    background-color: red;
+    // background-image: url('');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+    transform: translate(-50%, -50%);
+  }
+
+
+  &:hover::after {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
 }
-// .myImg::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background-color: rgba(255,255,255,0);
-//   transition: all 250ms ease-in-out;
-//   z-index: 1; /* Ensure the pseudo-element is on top of the image */
-//   border-radius: 5px; /* Match the border-radius of the image */
-// }
-// .myImg:hover::before {
-//   background-color: rgba(255,255,255,.3);
-// }
-// .myImg::after{
-//   content: '';
-//   background-image: url('/img/icon/zoom.svg');
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   width: 40px;
-//   height: 40px;
-//   opacity: .3;
-//   transform: translate(-50%, -50%);
-// }
-// .myImg:hover::after {
-//   width: 50px;
-//   height: 50px;
-//   opacity: .6;
-// }
+
 
 
 /* The Modal (background) */

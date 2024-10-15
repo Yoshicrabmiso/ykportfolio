@@ -136,7 +136,7 @@ button:focus {
 .main_title h2 {
   font-family: "Heebo", sans-serif;
   font-size: 36px;
-  color: #040404;
+  color: #312727;
   font-weight: bold;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -240,7 +240,7 @@ dotlottie-player {
 .header_area .navbar .nav .nav-item .nav-link {
   font: 500 12px/100px "Roboto", sans-serif;
   text-transform: uppercase;
-  color: #040404;
+  color: #312727;
   padding: 0px;
   display: inline-block;
 }
@@ -299,7 +299,7 @@ dotlottie-player {
 }
 .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
   line-height: 45px;
-  color: #040404;
+  color: #312727;
   padding: 0px 30px;
   transition: all 150ms linear;
   display: block;
@@ -329,7 +329,7 @@ dotlottie-player {
   font-size: 12px;
   line-height: 60px;
   display: inline-block;
-  color: #040404;
+  color: #312727;
   margin-left: 80px;
 }
 .header_area .navbar .search i {
@@ -377,7 +377,7 @@ dotlottie-player {
 }
 .header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
   line-height: 70px;
-  color: #040404;
+  color: #312727;
 }
 
 .top_menu {
@@ -432,7 +432,7 @@ dotlottie-player {
 .home_banner_area .banner_inner .banner_content {
   padding-top: 300px;
   text-align: left;
-  color: #040404;
+  color: #312727;
 }
 .home_banner_area .banner_inner .banner_content h5 {
   font-size: 14px;
@@ -531,7 +531,7 @@ dotlottie-player {
   margin-top: 70px;
 }
 .banner_area .banner_inner .banner_content h2 {
-  color: #040404;
+  color: #312727;
   font-size: 36px;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
@@ -579,7 +579,7 @@ dotlottie-player {
   margin-top: 70px;
 }
 .agw_banner_area .banner_inner .banner_content h2 {
-  color: #040404;
+  color: #312727;
   font-size: 36px;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
@@ -631,7 +631,7 @@ dotlottie-player {
   margin-top: 70px;
 }
 .nft_banner_area .banner_inner .banner_content h2 {
-  color: #040404;
+  color: #312727;
   font-size: 36px;
   font-family: "Heebo", sans-serif;
   margin-bottom: 0px;
@@ -678,7 +678,7 @@ dotlottie-player {
 }
 .l_blog_item .l_blog_text h4 {
   font-size: 21px;
-  color: #040404;
+  color: #312727;
   margin-bottom: 20px;
   transition: all 300ms linear 0s;
   font-family: "Heebo", sans-serif;
@@ -752,7 +752,7 @@ dotlottie-player {
   padding: 30px 35px 40px 30px;
 }
 .causes_item .causes_text h4 {
-  color: #040404;
+  color: #312727;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -785,7 +785,7 @@ dotlottie-player {
   border-color: #eeeeee;
   background: #fff;
   font-size: 14px;
-  color: #040404;
+  color: #312727;
 }
 
 /* End Causes Area css
@@ -828,7 +828,7 @@ dotlottie-player {
   display: inline-block;
   padding: 1px 18px;
   text-align: center;
-  color: #040404;
+  color: #312727;
 }
 .tags .tag_btn:before {
   background: #8490ff;
@@ -901,7 +901,7 @@ dotlottie-player {
 }
 .blog_info .post_tag a {
   font: 300 14px/21px "Roboto", sans-serif;
-  color: #040404;
+  color: #312727;
 }
 .blog_info .post_tag a:hover {
   color: #bebfc5;
@@ -917,7 +917,7 @@ dotlottie-player {
   display: inline-block;
 }
 .blog_info .blog_meta li a i {
-  color: #040404;
+  color: #312727;
   font-size: 16px;
   font-weight: 600;
   padding-left: 15px;
@@ -938,7 +938,7 @@ dotlottie-player {
 .blog_details h2 {
   font-size: 24px;
   line-height: 36px;
-  color: #040404;
+  color: #312727;
   font-weight: 600;
   transition: all 0.3s linear;
 }
@@ -953,7 +953,7 @@ dotlottie-player {
   font-size: 14px;
   line-height: 36px;
   display: inline-block;
-  color: #040404;
+  color: #312727;
   font-weight: 500;
   padding: 0px 30px;
   background: #fff;
@@ -1019,7 +1019,7 @@ dotlottie-player {
 .blog_right_sidebar .author_widget h4 {
   font-size: 18px;
   line-height: 20px;
-  color: #040404;
+  color: #312727;
   margin-bottom: 5px;
   margin-top: 30px;
 }
@@ -1031,7 +1031,7 @@ dotlottie-player {
 }
 .blog_right_sidebar .author_widget .social_icon a {
   font-size: 14px;
-  color: #040404;
+  color: #312727;
   transition: all 0.2s linear;
 }
 .blog_right_sidebar .author_widget .social_icon a + a {
@@ -1048,7 +1048,7 @@ dotlottie-player {
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
   font-size: 14px;
   line-height: 20px;
-  color: #040404;
+  color: #312727;
   margin-bottom: 4px;
   transition: all 0.3s linear;
 }
@@ -1151,7 +1151,7 @@ dotlottie-player {
   padding: 0px 13px;
   margin-bottom: 8px;
   transition: all 0.3s ease 0s;
-  color: #040404;
+  color: #312727;
   font-size: 12px;
 }
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
@@ -1228,7 +1228,7 @@ dotlottie-player {
   transition: all 0.2s linear;
 }
 .single-post-area .social-links li a:hover {
-  color: #040404;
+  color: #312727;
 }
 .single-post-area .blog_details {
   padding-top: 26px;
@@ -1268,7 +1268,7 @@ dotlottie-player {
 .single-post-area .navigation-area h4 {
   font-size: 18px;
   line-height: 25px;
-  color: #040404;
+  color: #312727;
 }
 .single-post-area .navigation-area .nav-left {
   text-align: left;
@@ -1337,7 +1337,7 @@ dotlottie-player {
 .comments-area h4 {
   text-align: center;
   margin-bottom: 50px;
-  color: #040404;
+  color: #312727;
   font-size: 18px;
 }
 .comments-area h5 {
@@ -1345,7 +1345,7 @@ dotlottie-player {
   margin-bottom: 0px;
 }
 .comments-area a {
-  color: #040404;
+  color: #312727;
 }
 .comments-area .comment-list {
   padding-bottom: 48px;
@@ -1381,7 +1381,7 @@ dotlottie-player {
 }
 .comments-area .btn-reply {
   background-color: #fff;
-  color: #040404;
+  color: #312727;
   border: 1px solid #eee;
   padding: 2px 18px;
   font-size: 12px;
@@ -1407,7 +1407,7 @@ dotlottie-player {
   margin-bottom: 50px;
   font-size: 18px;
   line-height: 22px;
-  color: #040404;
+  color: #312727;
 }
 .comment-form .name {
   padding-left: 0px;
@@ -1512,7 +1512,7 @@ dotlottie-player {
 }
 .home_map_area .home_details .box_home_details .media .media-body h4 {
   font-size: 14px;
-  color: #040404;
+  color: #312727;
   text-transform: uppercase;
 }
 .home_map_area .home_details .box_home_details .media .media-body p {
@@ -1642,10 +1642,10 @@ dotlottie-player {
   color: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
-  color: #040404;
+  color: #312727;
 }
 .contact_info .info_item h6 a {
-  color: #040404;
+  color: #312727;
 }
 .contact_info .info_item p {
   font-size: 14px;
@@ -1779,11 +1779,11 @@ dotlottie-player {
 /*==============Elements Button Area css ================*/
 .elements_button .title_color {
   margin-bottom: 30px;
-  color: #040404;
+  color: #312727;
 }
 
 .title_color {
-  color: #040404;
+  color: #312727;
 }
 
 .button-group-area {
@@ -1803,7 +1803,7 @@ dotlottie-player {
 }
 .button-group-area .link {
   text-decoration: underline;
-  color: #040404;
+  color: #312727;
   background: transparent;
 }
 .button-group-area .link:hover {
@@ -2808,7 +2808,7 @@ h6 {
 }
 
 .single-defination h4 {
-  color: #040404;
+  color: #312727;
 }
 
 .primary-checkbox input:checked + label {
@@ -3213,7 +3213,7 @@ h6 {
   display: inline-block;
   background: #f9f9ff;
   padding: 0px 50px;
-  color: #040404;
+  color: #312727;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
@@ -3251,7 +3251,7 @@ h6 {
 .white_bg_btn {
   background: #fff;
   display: inline-block;
-  color: #040404;
+  color: #312727;
   line-height: 40px;
   padding: 0px 28px;
   font-size: 14px;
@@ -3273,7 +3273,7 @@ h6 {
   font-size: 13px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  color: #040404;
+  color: #312727;
   line-height: 34px;
   display: inline-block;
 }
@@ -3357,7 +3357,7 @@ h6 {
 }
 .team_item .team_name h4 {
   margin-bottom: 5px;
-  color: #040404;
+  color: #312727;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -3405,7 +3405,7 @@ h6 {
   margin-top: 45px;
 }
 .welcome_text h4 {
-  color: #040404;
+  color: #312727;
   font-family: "Public Sans", sans-serif;
   font-size: 36px;
   margin-bottom: 18px;
@@ -3434,7 +3434,7 @@ h6 {
   font-size: 24px;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
-  color: #040404;
+  color: #312727;
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -3450,7 +3450,7 @@ h6 {
   padding: 50px 35px;
 }
 .tools_expert h3 {
-  color: #040404;
+  color: #312727;
   font-size: 21px;
   text-transform: uppercase;
 }
@@ -3527,7 +3527,7 @@ h6 {
   line-height: 60px;
 }
 .feature_item h4 {
-  color: #040404;
+  color: #312727;
   font-size: 21px;
   font-family: "Heebo", sans-serif;
   font-weight: bold;
@@ -3563,11 +3563,11 @@ h6 {
 }
 .projects_area h2 {
   font-family: "Public Sans", sans-serif;
-  color: #040404;
+  color: #312727;
 }
 .projects_area p {
   font-family: "Public Sans", sans-serif;
-  color: #040404;
+  color: #312727;
 }
 
 .projects_fillter .filter {
@@ -3636,7 +3636,7 @@ h6 {
   font-size: 21px;
   font-family: "Public Sans", sans-serif;
   font-weight: bold;
-  color: #040404;
+  color: #312727;
   margin-bottom: 5px;
   transition: all 300ms linear 0s;
   text-transform: uppercase;
@@ -3693,7 +3693,7 @@ h6 {
   padding: 20px;
 }
 .portfolio_details_inner h4 {
-  color: #040404;
+  color: #312727;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -3728,7 +3728,7 @@ h6 {
   margin-bottom: 10px;
 }
 .portfolio_row_text h4 {
-  color: #040404;
+  color: #312727;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -3742,7 +3742,7 @@ h6 {
 }
 .portfolio_row_text .list li span {
   font-size: 16px;
-  color: #040404;
+  color: #312727;
   font-weight: 700;
   display: inline-block;
   font-weight: normal;
@@ -3764,7 +3764,7 @@ h6 {
   padding-bottom: 30px;
 }
 .faq_answer_text h4 {
-  color: #040404;
+  color: #312727;
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 18px;
@@ -3911,7 +3911,7 @@ h6 {
 }
 
 .test_title h2 {
-  color: #040404;
+  color: #312727;
   font-size: 36px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -3931,7 +3931,7 @@ h6 {
   font-style: italic;
 }
 .testi_item h4 {
-  color: #040404;
+  color: #312727;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -4080,7 +4080,7 @@ h6 {
 }
 
 .faq-question > h4 {
-  color: #040404;
+  color: #312727;
 }
 
 .faq-question > .fa {
