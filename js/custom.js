@@ -303,17 +303,20 @@
 
   /*  zoom_in_image js
     /*----------------------------------------------------*/
+
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
-// Get all images with the class "myImg" and set up the click event listener
+// Get all images within the "myImg" class and set up the click event listener
 var images = document.getElementsByClassName("myImg");
-for (let img of images) {
-  img.onclick = function(){
+
+for (let container of images) {
+  let img = container.querySelector('img');  // Select the img inside .myImg
+  container.onclick = function(){
     modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+    modalImg.src = img.src;  // Get the src of the img tag
+    captionText.innerHTML = img.alt;  // Get the alt text of the img tag
   }
 }
 
@@ -331,4 +334,3 @@ modal.onclick = function(event) {
     modal.style.display = "none";
   }
 };
-
