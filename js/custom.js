@@ -44,6 +44,32 @@
     }
     testimonialSlider();
 
+    (function($){
+      "use strict"
+      var nav_offset_top = $('.header_area').height() + 50;
+      var scrollTimeout;
+
+      function navbarFixed() {
+          if ( $('.header_area').length ){
+              $(window).scroll(function() {
+                  var scroll = $(window).scrollTop();
+                  clearTimeout(scrollTimeout); // Clear any existing timeout
+
+                  // Show the navbar on scroll
+                  if (scroll >= nav_offset_top) {
+                      $(".header_area").removeClass("navbar_hidden");
+                  }
+
+                  // Set a timeout to hide the navbar after 1 second of no scroll
+                  scrollTimeout = setTimeout(function() {
+                      $(".header_area").addClass("navbar_hidden");
+                  }, 1000); // 1 second delay
+              });
+          }
+      }
+
+      navbarFixed();
+  })(jQuery);
     //------- Mailchimp js --------//
 
   //   function mailChimp(){

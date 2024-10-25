@@ -124,6 +124,7 @@
     /* Full height per column */
 
     &.img-column {
+
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -161,15 +162,36 @@
           /* Internet Explorer and Edge */
         }
         .scroll-paragraph {
+          .img-group {
+            display: flex;
+            flex-direction: row;
+            @media (max-width: 768px) {
+              /* Mobile and tablet adjustments */
+              flex-direction: column;
+              /* Stack the columns vertically */
+              width: 100%;
+            }
+          }
           img {
             width: 100%;
           }
 
           // Group p, h3, and ul since they share the same styles
-          p, h3, ul {
+          h3{
             width: 50vw;
             margin: auto;
             padding: 30px;
+            @media (max-width: 768px) {  // You can adjust the breakpoint as needed
+              width: 90vw;
+            }
+          }
+          p, ul {
+            width: 50vw;
+            margin: auto;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
             @media (max-width: 768px) {  // You can adjust the breakpoint as needed
               width: 90vw;
             }
@@ -203,8 +225,10 @@
 
   h4 {
     /* Optional: Adds space between the text and the border */
-    max-width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
     text-wrap: wrap;
+    width: auto;
   }
 
   p {
