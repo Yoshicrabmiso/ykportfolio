@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
       introImage.classList.add('fade-in');
   }, 100);
 
-  // After 5 seconds, fade out the intro image
+  // After 2 seconds, fade out the intro image
   setTimeout(() => {
       introImage.classList.remove('fade-in');
       introImage.classList.add('fade-out');
-  }, 5000);
+  }, 2000);
 
   // Intersection observer to fade in/out the sections
   const observer = new IntersectionObserver((entries) => {

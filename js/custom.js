@@ -60,10 +60,10 @@
                       $(".header_area").removeClass("navbar_hidden");
                   }
 
-                  // Set a timeout to hide the navbar after 1 second of no scroll
+                  // Set a timeout to hide the navbar after 3 second of no scroll
                   scrollTimeout = setTimeout(function() {
                       $(".header_area").addClass("navbar_hidden");
-                  }, 1000); // 1 second delay
+                  }, 3000); // 1 second delay
               });
           }
       }
