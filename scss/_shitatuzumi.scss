@@ -206,14 +206,26 @@
 
   a {
     display: flex;
-    /* Use flexbox to center the content */
     justify-content: center;
     align-items: center;
-    /* Center horizontally */
     text-decoration: none;
-    color: peru;
-  }
+    color: $shita;
 
+    &.shita-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid $shita;
+      color: $shita;
+      font-size: 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: $shita;
+        color: #ffffff;
+      }
+    }
+  }
   h3 {
     border-bottom: 2px solid $shita;
     /* Adjust thickness and color as needed */
