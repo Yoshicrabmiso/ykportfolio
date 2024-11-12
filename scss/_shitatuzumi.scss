@@ -3,30 +3,30 @@
 //   margin: 0;
 //   overflow-x: hidden;
 // }
-.sticky-button {
-  position: fixed;
-  /* Sticks the button in a fixed position on the screen */
-  bottom: 20px;
-  /* Distance from the bottom of the screen */
-  right: 20px;
-  /* Distance from the right side of the screen */
-  padding: 10px 20px;
-  /* Padding inside the button */
-  border: none;
-  /* Removes border */
-  border-radius: 5px;
-  /* Rounded corners */
-  cursor: pointer;
-  /* Changes cursor to pointer on hover */
-  z-index: 1000;
+// .sticky-button {
+//   position: fixed;
+//   /* Sticks the button in a fixed position on the screen */
+//   bottom: 20px;
+//   /* Distance from the bottom of the screen */
+//   right: 20px;
+//   /* Distance from the right side of the screen */
+//   padding: 10px 20px;
+//   /* Padding inside the button */
+//   border: none;
+//   /* Removes border */
+//   border-radius: 5px;
+//   /* Rounded corners */
+//   cursor: pointer;
+//   /* Changes cursor to pointer on hover */
+//   z-index: 1000;
 
-  p {
-    font-size: 12px;
-    color: $shita;
-  }
+//   p {
+//     font-size: 12px;
+//     color: $shita;
+//   }
 
-  /* Ensures the button is above other content */
-}
+//   /* Ensures the button is above other content */
+// }
 
 .intro-image {
   position: fixed;
@@ -90,41 +90,36 @@
 }
 
 .content {
-  position: fixed;
+  position: absolute;  /* Or relative, depending on your layout */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .row {
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 80vw;
-    /* Keeps it square on larger screens */
     align-items: center;
-    /* Vertically center all columns */
 
     @media (max-width: 768px) {
-      /* Mobile and tablet adjustments */
       flex-direction: column;
-      /* Stack the columns vertically */
       width: 100vw;
-      /* Full screen width on mobile */
       height: 100vh;
-      /* Each column covers the full height */
       align-items: flex-start;
-      /* Adjust for mobile */
     }
   }
 
   .column {
     flex: 1;
     height: 80vh;
-    /* Full height per column */
 
     &.img-column {
-
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -139,70 +134,62 @@
 
       @media (max-width: 768px) {
         height: auto;
-        /* Adjust height for content on mobile */
       }
 
       .scrollable-content {
         width: 100%;
         max-height: 80vh;
-        /* Set max height for scrollable area */
         overflow-y: scroll;
-        /* Enables scrolling */
         padding: 10px;
         box-sizing: border-box;
 
-        /* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
         ::-webkit-scrollbar {
           display: none;
-          /* Hide scrollbar for Firefox */
-          scrollbar-width: none;
-          /* Firefox only */
-          /* Hide scrollbar for IE, Edge */
-          -ms-overflow-style: none;
-          /* Internet Explorer and Edge */
         }
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
         .scroll-paragraph {
           .img-group {
             display: flex;
             flex-direction: row;
+
             @media (max-width: 768px) {
-              /* Mobile and tablet adjustments */
               flex-direction: column;
-              /* Stack the columns vertically */
               width: 100%;
             }
           }
+
           img {
             width: 100%;
           }
 
-          // Group p, h3, and ul since they share the same styles
-          h3{
+          h3 {
             width: 50vw;
             margin: auto;
             padding: 30px;
-            @media (max-width: 768px) {  // You can adjust the breakpoint as needed
+
+            @media (max-width: 768px) {
               width: 90vw;
             }
           }
+
           p, ul {
             width: 50vw;
             margin: auto;
-            padding: 20px;
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-bottom: 30px;
-            @media (max-width: 768px) {  // You can adjust the breakpoint as needed
+            padding: 20px 30px 30px;
+
+            @media (max-width: 768px) {
               width: 90vw;
             }
           }
         }
-
-
-
       }
     }
   }
+
+
+
 
   a {
     display: flex;
