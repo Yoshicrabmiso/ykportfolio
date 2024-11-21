@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }, {
       root: null,
-      threshold: 0.5 // Trigger when 50% of the section is in view
+      threshold: 0.5, // Trigger when 50% of the section is in view
+      rootMargin: '0px 0px -50px 0px' // Adjust for better detection
   });
 
   // Observe each fade_section

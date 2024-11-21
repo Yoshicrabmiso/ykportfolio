@@ -337,6 +337,7 @@ var captionText = document.getElementById("caption");
 // Get all images within the "myImg" class and set up the click event listener
 var images = document.getElementsByClassName("myImg");
 
+
 for (let container of images) {
   let img = container.querySelector('img');  // Select the img inside .myImg
   container.onclick = function(){
@@ -345,6 +346,7 @@ for (let container of images) {
     captionText.innerHTML = img.alt;  // Get the alt text of the img tag
   }
 }
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
